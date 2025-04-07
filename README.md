@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Portfolio
+
+Welcome to my portfolio! This is a collection of my work showcasing web development projects and skills.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
