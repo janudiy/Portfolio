@@ -16,6 +16,7 @@
   font-weight: bold;
   text-align: center;
 }
+
 .email-link {
   color: #88ffa5;
   text-decoration: none;
@@ -26,6 +27,7 @@
   text-decoration: underline;
   color: #ffffff;
 }
+
 .contact-page form {
   max-width: 600px;
   margin: auto;
@@ -37,6 +39,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
   text-align: left;
   margin-bottom: 40px;
+  padding-right: 70px;
 }
 
 .contact-page label {
@@ -78,4 +81,99 @@
 .contact-page button:hover {
   opacity: 1;
   background-color: #1e293b;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices larger than 768px (tablets and up) */
+@media (max-width: 768px) {
+  .contact-page h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-page p {
+    font-size: 1rem;
+  }
+
+  .contact-page form {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .contact-page label {
+    font-size: 0.9rem;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .contact-page button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* For devices smaller than 600px (mobiles) */
+@media (max-width: 600px) {
+  .contact-page h2 {
+    font-size: 2rem;
+  }
+
+  .contact-page p {
+    font-size: 0.9rem;
+  }
+
+  .contact-page form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .contact-page label {
+    font-size: 0.85rem;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .contact-page button {
+    font-size: 0.85rem;
+    padding: 10px 20px;
+  }
+}
+
+/* For very small devices (portrait phones in landscape mode) */
+@media (max-width: 400px) {
+  .contact-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-page p {
+    font-size: 0.8rem;
+  }
+
+  .contact-page form {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .contact-page label {
+    font-size: 0.8rem;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .contact-page button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
 }
