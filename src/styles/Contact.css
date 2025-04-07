@@ -1,6 +1,8 @@
 .contact-page {
   color: white;
   text-align: center;
+  max-width: 100%;
+  margin: 10px;
 }
 
 .contact-page h2 {
