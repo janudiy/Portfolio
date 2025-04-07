@@ -1,0 +1,43 @@
+footer {
+  background: linear-gradient(135deg, #001f3d, #003c76); /* Navy blue to cobalt blue gradient */
+  color: #f2f2f2;  /* Light color for text to contrast with the dark background */
+  text-align: center;  /* Center the footer text */
+  padding: 20px 0;  /* Padding for top and bottom */
+  position: relative;
+  bottom: 0;
+  width: 100%;  /* Ensure footer spans the full width */
+}
+
+footer .footer-text {
+  font-weight: bold;
+  color: #00ba92;  /* Set the text color to black */
+  margin: 0;  /* Remove margin around the paragraph */
+  font-size: 16px;  /* Slightly smaller font for a clean look */
+}
+
+footer a {
+  font-weight: bold;
+  color: #f2f2f2;  /* Light color for links */
+  text-decoration: none;  /* Remove underline from links */
+  font-size: 16px;  /* Slightly larger font for links */
+}
+
+footer a:hover {
+  color: #ff4d4d;  /* Red color on hover for a nice effect */
+  text-decoration: underline;  /* Underline effect on hover */
+}
+
+footer .social-links {
+  margin-top: 10px;  /* Space between text and social icons */
+}
+
+footer .social-links a {
+  margin: 0 15px;  /* Space out the social icons */
+  font-size: 20px;  /* Set a larger font size for the icons */
+  color: #00ba92;  /* White color for the icons */
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #000000;  /* Change color on hover */
+}

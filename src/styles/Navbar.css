@@ -1,0 +1,57 @@
+/* Navbar.css */
+.navbar {
+  background: linear-gradient(45deg,  #001f3d, #003c76); /* Gradient background for a dynamic look */
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.navbar:hover {
+  background: linear-gradient(45deg, #003c76, #001f3d); /* Reverse gradient on hover */
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  color: #00ba92; /* White logo to match the theme */
+  text-transform: uppercase; /* Make logo text all caps */
+  letter-spacing: 2px; /* Spacing between letters for better readability */
+  transition: color 0.3s ease; /* Smooth transition for logo color */
+}
+
+.logo:hover {
+  color: #000000; /* Red color on hover for contrast */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Slightly more space between nav items */
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: #00ba92;
+  font-weight: bold;
+  padding: 8px 14px; /* Slightly larger padding for better clickability */
+  border-radius: 5px;
+  text-decoration: none; /* Remove the underline */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-links a:hover {
+  background-color: #000000; /* Navy blue background on hover */
+  color: #00ba92; /* Ensure text remains white on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.nav-links a:active {
+  transform: translateY(1px); /* Slight press effect when clicked */
+}

@@ -1,0 +1,81 @@
+.contact-page {
+  color: white;
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #00ba92;
+}
+
+.contact-page p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.email-link {
+  color: #88ffa5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.contact-page form {
+  max-width: 600px;
+  margin: auto;
+  font-weight: bold;
+  background: rgba(13, 4, 58, 0.622); /* Increased opacity */
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.contact-page label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #00ba92;
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.contact-page input::placeholder,
+.contact-page textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-page button {
+  background: #00ba92;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed; /* disable cursor until backend is added */
+  opacity: 0.9;
+}
+
+.contact-page button:hover {
+  opacity: 1;
+  background-color: #1e293b;
+}

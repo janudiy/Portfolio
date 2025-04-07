@@ -1,0 +1,226 @@
+.home-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 80px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  min-height: 80vh; /* Increase the height for more space */
+  animation: fadeIn 1.5s ease;
+}
+
+/* Section for profile photo, subtitle, description, and buttons */
+.home-content-container {
+  display: flex;
+  justify-content: space-between; /* Space out the content */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Take full width */
+  margin-bottom: 40px;
+}
+
+/* Profile content (left side) */
+.home-content {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: 270px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  animation: popIn 1.2s ease;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #00ba92; /* Cobalt Blue */
+}
+
+/* Introduction paragraph (right side) */
+.home-intro {
+  flex: 2;
+  background: rgba(13, 4, 58, 0.622); /* Slightly dark background */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(13, 4, 58, 0.622);
+  max-width: 40%;
+  opacity: 0.9; /* Slightly transparent */
+  text-align: justify;
+  color: #6cb0c6;
+  margin: 30px;
+}
+
+.home-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.home-intro a {
+  color: #00ba92;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-intro a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the buttons */
+
+.home-button {
+  padding: 12px 25px;
+  background-color: #00ba92;
+  color: #202854; /* Cobalt Blue */
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.home-button:hover {
+  background-color: #000000;
+  color: #00ba92; /* Red */
+}
+
+
+
+/* Technologies I Use */
+.technologies-title {
+  text-align: center; /* Centers the title */
+  font-size: 2rem; /* Adjust size as needed */
+  margin-bottom: 20px; /* Optional: space below the title */
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.technologies-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  text-align: center; /* Center the text */
+  display: inline-block; /* Ensure items align side by side */
+  margin: 15px; /* Optional: add some spacing around items */
+}
+
+.tech-item img {
+  width: 40px; /* Adjust the size of the logo */
+  height: 40px;
+  margin-bottom: 5px; /* Adds space between the logo and text */
+}
+
+.tech-item span {
+  display: block; /* Ensures text appears below the logo */
+}
+
+.tech-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.technologies-category {
+  margin: 40px 0;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #00ba92; /* Optional: You can use your primary color */
+}
+
+/* Animation for fadeIn and popIn */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-content-container {
+    flex-direction: column; /* Stack profile and intro vertically */
+    align-items: center;
+  }
+
+  .home-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .home-intro {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .home-button {
+    width: 80%; /* Make buttons easier to tap */
+    margin: 8px auto;
+    display: block;
+  }
+
+  .technologies-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-item {
+    margin: 10px 0;
+  }
+
+  .tech-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .home-intro p {
+    font-size: 1rem;
+  }
+
+  .technologies-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-item span {
+    font-size: 0.9rem;
+  }
+}
