@@ -11,7 +11,7 @@ const Home = () => {
           <img src="profilepic.jpg" alt="Janudi" className="profile-img" />
           <h1 className="home-title">Janudi Yatagampitiya</h1>
           <p className="home-subtitle"><span className="typing-text">Web Developer | Frontend Developer | Tech Enthusiast</span></p>
-          <a href="/projects" className="home-button">Learn More</a>
+          <a href="/Projects" className="home-button">Learn More</a>
          <a href="cv.pdf" download className="home-button">Download My CV</a>
         </div>
 
