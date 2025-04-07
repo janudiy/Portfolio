@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -11,8 +12,8 @@ const Home = () => {
           <img src="profilepic.jpg" alt="Janudi" className="profile-img" />
           <h1 className="home-title">Janudi Yatagampitiya</h1>
           <p className="home-subtitle"><span className="typing-text">Web Developer | Frontend Developer | Tech Enthusiast</span></p>
-          <a href="/Projects" className="home-button">Learn More</a>
-         <a href="cv.pdf" download className="home-button">Download My CV</a>
+          <Link to="/projects" className="home-button">Learn More</Link>
+          <a href="cv.pdf" download className="home-button">Download My CV</a>
         </div>
 
         {/* Introduction paragraph (right side) */}
@@ -22,7 +23,7 @@ const Home = () => {
             affiliated with the University of Westminster. I am a passionate UI/UX designer and web developer
             who loves creating intuitive and visually engaging digital experiences. With a strong focus on 
             design and development, I craft modern web and mobile applications using the latest technologies.
-            Constantly eager to learn and innovate, I thrive on turning ideas into functional and aesthetically 
+            Constantly eager to learn and innovate, I thrive on turning ideas into functional and aestnpmhetically 
             pleasing solutions.
           </p>
           <p>Feel free to take a look at my latest projects on the <a href="/projects">projects</a> page.</p>
